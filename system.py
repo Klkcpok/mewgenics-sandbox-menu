@@ -130,7 +130,7 @@ def game_needs_admin(game_dir: Path | None, hwnd: int | None) -> bool:
 
 
 def relaunch_as_admin(script: Path) -> bool:
-    params = " ".join(f'"{a}"' for a in [str(script), "--elevated"])
+    params = " ".join(f'"{a}"' for a in [str(script), "--elevated"] + sys.argv[1:])
     rc = ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, params, str(script.parent), 1)
     return rc > 32
 
