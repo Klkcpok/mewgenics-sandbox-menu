@@ -45,6 +45,14 @@ Start a run, enter a fight, pick an enemy and press **Send to game** (or double-
 - The developer console is an unofficial, unsupported feature of the game; a game update can change or remove commands.
 - Save snapshots are stored in `%LOCALAPPDATA%\MewgenicsSandboxMenu\snapshots`.
 
+## Build the exe yourself
+
+The release exe is built with PyInstaller from this exact source:
+
+1. Install Python 3.12.
+2. Run `build.bat` (installs PySide6 + PyInstaller 6.22.3 and builds).
+3. The result is `dist\MewgenicsSandboxMenu.exe`.
+
 ## Credits
 
 - Mewgenics © Edmund McMillen & Tyler Glaiel (Glaiel Games). This project is not affiliated with or endorsed by them.
