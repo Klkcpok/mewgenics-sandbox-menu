@@ -27,7 +27,7 @@ Nothing is injected into the game process and no game files are modified.
 ## Install
 
 1. Install [Python 3.10+](https://www.python.org/downloads/) (tick *Add to PATH*).
-2. Download this repository and run `run.bat` (first start installs PySide6).
+2. Download this repository and double-click `MewgenicsSandboxMenu.pyw` (or run `run.bat`). On first start it offers to install PySide6.
 3. On first start, allow it to enable the debug console, then (re)start Mewgenics.
 
 The Steam install is found automatically; otherwise you'll be asked for the folder containing `resources.gpak`.
